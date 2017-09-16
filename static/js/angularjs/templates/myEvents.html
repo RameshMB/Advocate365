@@ -1,0 +1,21 @@
+<div ng-cloak>
+    <md-content>
+        <md-tabs md-dynamic-height md-border-bottom>
+            <md-tab label="Today Events" data-ng-click="vm.clickedTab('Today Events')">
+                <md-content class="md-padding">
+                    <div ui-grid="{ data: vm.todayEvents }" class="grid"></div>
+                </md-content>
+            </md-tab>
+            <md-tab label="Upcoming Events" data-ng-click="vm.clickedTab('Upcoming Events')">
+                <md-content class="md-padding">
+                    <div ui-grid="{ data: vm.upComingEvents }" class="grid"></div>
+                </md-content>
+            </md-tab>
+            <md-tab label="Past Events" data-ng-click="vm.clickedTab('Past Events')">
+                <md-content class="md-padding">
+                    <div ui-grid="{ data: vm.pastEvents }" class="grid"></div>
+                </md-content>
+            </md-tab>
+        </md-tabs>
+    </md-content>
+</div>
